@@ -28,11 +28,11 @@
 }
 
 .header {
-    background: #131313;   
+    background: #131313;
 }
 
 .header-content {
-    max-width: 1256px; 
+    max-width: 1256px;
     height: 83px;
     display: flex;
     justify-content: space-between;
@@ -100,9 +100,9 @@
     font-size: 11px;
     line-height: 15px;
     font-family: 'Nunito_Sans_Italic';
-  
+
     text-transform: uppercase;
-    letter-spacing: 1.1px;   
+    letter-spacing: 1.1px;
 }
 
 
@@ -123,7 +123,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
-} 
+}
 
 .hero-content {
     position: relative;
@@ -138,7 +138,7 @@
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
-    color: #FFFFFF;  
+    color: #FFFFFF;
 }
 
 .hero-text {
@@ -186,9 +186,9 @@
 }
 
 .completed_projects ul {
-    display: flex; 
+    display: flex;
     padding-top: 107px;
-    padding-left: 630px;    
+    padding-left: 630px;
 }
 
 .completed_projects ul li {
@@ -208,7 +208,7 @@
 }
 
 .completed_projects ul li a:hover {
-    text-decoration: none; 
+    text-decoration: none;
     border-bottom: 1px #E3B873 solid;
     padding-bottom: 6px;
     color: #E3B873;
@@ -257,14 +257,14 @@
     display: none;
 }
 
-.subsubtitle_info { 
+.subsubtitle_info {
     display: grid;
     grid-template-columns: 190px 213px;
     grid-template-rows: 73px 55px;
-    grid-gap: 34px; 
+    grid-gap: 34px;
     column-gap: 0;
-    
-    padding-top: 48px;  
+
+    padding-top: 48px;
     text-align: left;
 }
 
@@ -290,7 +290,8 @@
     padding-top: 83px;
 }
 
-.subsubtitle_info > * { /* > означает, что это свойство будет применятся ко всем дочерним элементам класса .subsubtitle_info, т.е. ко всем четырем блокам */
+.subsubtitle_info>* {
+    /* > означает, что это свойство будет применятся ко всем дочерним элементам класса .subsubtitle_info, т.е. ко всем четырем блокам */
     margin: 0;
 }
 
@@ -318,17 +319,17 @@
     align-items: center;
 
     position: relative;
-    top: -324px;   
+    top: -324px;
 }
 
 .camera {
-    border-style: none; 
+    border-style: none;
 }
 
 .repair {
     height: 434px;
     width: 817px;
-    
+
     margin-top: 27px;
     padding: 0;
 }
@@ -340,7 +341,7 @@
     right: 0;
     bottom: 0;
     height: 434px;
-    width: 817px; 
+    width: 817px;
 
     background: rgba(0, 0, 0, 0.8);
 }
@@ -350,7 +351,7 @@
     width: 55px;
 
     background: #E3B873;
-    border-radius: 30px; 
+    border-radius: 30px;
     border-style: none;
 
     margin-top: 59px;
@@ -394,9 +395,9 @@
 }
 
 .form_online-control {
-    display: flex; 
-    margin-top: 80px; 
-    justify-content: space-between; 
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
     width: 769px;
     height: 51px;
 }
@@ -419,14 +420,14 @@
     font-family: 'Nunito_Sans_Regular';
     font-weight: 400;
     font-size: 14px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .subtitle_lable-online-control {
     line-height: 15px;
     color: rgba(54, 54, 54, 1);
     width: 231px;
-    border-bottom: 1px rgba(54, 54, 54, 0.3) solid; 
+    border-bottom: 1px rgba(54, 54, 54, 0.3) solid;
     padding-bottom: 6px;
 }
 
@@ -450,50 +451,56 @@
     text-transform: uppercase;
     font-family: 'Nunito_Sans_Regular';
     margin: 0;
-  }
+}
 
 
 .first-checkbox {
     padding-top: 33px;
 }
 
-  .label {
+.label {
     cursor: pointer;
-  }
+}
 
-  .checkbox{
+.checkbox {
     display: none;
-  }
+}
 
-  .fake{
-    display: inline-flex; /* выстраивает галочку и текст в одну линию, нижний край у обоих элементов идет вровень друг с другом */
+.fake {
+    display: inline-flex;
+    /* выстраивает галочку и текст в одну линию, нижний край у обоих элементов идет вровень друг с другом */
     width: 18px;
     height: 18px;
     background: #E3B873;
     color: #FFFFFF;
     justify-content: center;
-  }
+}
 
-  .text_checkbox {
+.text_checkbox {
     font-family: 'Nunito_Sans_Regular';
     font-weight: 400;
     font-size: 14px;
     line-height: 23px;
-  }
+}
 
-  .text_checkbox-oc {
+.text_checkbox-oc {
     color: #181818;
-  }
+}
 
-  .fake::before{ /* создается псевдоэлемент fake */
-    content:"\2714"; /* цифры - это спецсимвол, обозначающий галочку */
-    opacity: 0; /*указывает на то, что элемент галочка изначально является прозрачным*/
-    transition: 0.2s; /*через какое время появиться галочка */
-  }
+.fake::before {
+    /* создается псевдоэлемент fake */
+    content: "\2714";
+    /* цифры - это спецсимвол, обозначающий галочку */
+    opacity: 0;
+    /*указывает на то, что элемент галочка изначально является прозрачным*/
+    transition: 0.2s;
+    /*через какое время появиться галочка */
+}
 
-  .checkbox:checked + .fake::before{ /* Сразу после нажатия (:checked) на чек-бокс для селектора .fake::before начинает применятся новое свойство opacity: 1; */
+.checkbox:checked+.fake::before {
+    /* Сразу после нажатия (:checked) на чек-бокс для селектора .fake::before начинает применятся новое свойство opacity: 1; */
     opacity: 1;
-  }
+}
 
 
 
@@ -501,13 +508,13 @@
 
 .TYPES_OF_REPAIR {
     background-color: #FFFFFF;
-  }
+}
 
 .TYPES_OF_REPAIR-content {
     max-width: 1263px;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .subtitle_h3 {
@@ -533,7 +540,7 @@
     display: flex;
     justify-content: space-between;
     width: 1236px;
-    height: 628px; 
+    height: 628px;
 }
 
 .about_type {
@@ -543,7 +550,7 @@
     height: 286px;
 
     position: relative;
-    top: -127px; 
+    top: -127px;
 }
 
 .about_type h4 {
@@ -667,7 +674,7 @@
     text-align: center;
     color: #FFFFFF;
     margin-top: 27px;
-    
+
 }
 
 .title_lable-departure {
@@ -677,16 +684,16 @@
     padding-right: 49px;
 }
 
-.subtitle_lable-departure { 
+.subtitle_lable-departure {
     line-height: 23px;
     color: #FFFFFF;
     margin: 0;
-    padding-top: 5px; 
+    padding-top: 5px;
     margin-bottom: 14px;
 
-    border-bottom: 1px rgba(255, 255, 255, 0.15) solid; 
+    border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
     padding-bottom: 6px;
-    
+
 }
 
 .input_dep {
@@ -717,7 +724,7 @@
     width: 213px;
     height: 51px;
 
-    margin-top: 26px; 
+    margin-top: 26px;
     margin-left: 240px;
 }
 
@@ -794,7 +801,7 @@
     color: #FFFFFF;
 }
 
-.repair_styles-text ul li a:hover{
+.repair_styles-text ul li a:hover {
     color: #E3B873;
     border-bottom: 0.66px #E3B873 solid;
     padding-bottom: 1.17px;
@@ -835,15 +842,17 @@
     height: 1107px;
     background-color: #FFFFFF;
     background-image: url('../images/background-clients.png');
-    background-position: bottom; /*фоновую картинку располагаю внизу этого контейнера */
-    background-repeat:repeat-x; /*фон повторяется по горизонтали*/
+    background-position: bottom;
+    /*фоновую картинку располагаю внизу этого контейнера */
+    background-repeat: repeat-x;
+    /*фон повторяется по горизонтали*/
 }
 
 .clients-content {
     max-width: 1236px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .subtitle_h3-clients {
@@ -927,7 +936,7 @@
 
 
 .our_contacts {
-    background-image: url('../images/background-our_contacts.jpeg') ;
+    background-image: url('../images/background-our_contacts.jpeg');
     background-size: cover;
     background-position: center;
     height: 954px;
@@ -976,7 +985,7 @@
     line-height: 23px;
     color: #FFFFFF;
     margin: 0;
-    border-bottom: 1px rgba(255, 255, 255, 0.15) solid; 
+    border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
     padding-bottom: 6px;
     margin-bottom: 42px;
 }
@@ -1016,7 +1025,7 @@
     margin-top: 44px;
 }
 
-    
+
 .address {
     text-align: center;
     display: flex;
@@ -1070,16 +1079,16 @@
 
 
 .footer {
-    background: #181818;   
+    background: #181818;
 }
 
 .footer-content {
-    max-width: 1256px; 
+    max-width: 1256px;
     height: 133px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}   
+}
 
 .footer nav ul li {
     font-family: 'Nunito_Sans_Regular';
@@ -1110,7 +1119,7 @@
 @media (min-width: 1237px) and (max-width: 1325px) {
 
     .header-content {
-        max-width: 1190px; 
+        max-width: 1190px;
     }
 
     .header-button {
@@ -1123,7 +1132,8 @@
 
     .object {
         width: 581px;
-        height: 382px; /* делаю так, чтобы картинка не выезжала за пределы сайта */
+        height: 382px;
+        /* делаю так, чтобы картинка не выезжала за пределы сайта */
     }
 
     .about_measuring {
@@ -1150,10 +1160,14 @@
 
 
 
-@media (min-width: 1024px) and (max-width: 1236px) { 
+@media (min-width: 1024px) and (max-width: 1236px) {
+
+    .container {
+        max-width: 975px;
+    }
 
     .header-content {
-        max-width: 975px; 
+        max-width: 975px;
     }
 
     .header nav ul li a {
@@ -1182,7 +1196,7 @@
     }
 
     .subsubtitle_info {
-    grid-template-columns: 190px 180px;
+        grid-template-columns: 190px 180px;
     }
 
     .completed_projects ul {
@@ -1195,12 +1209,13 @@
 
     .object {
         width: 477px;
-        height: 314px; /* делаю так, чтобы картинка не выезжала за пределы сайта */
+        height: 314px;
+        /* делаю так, чтобы картинка не выезжала за пределы сайта */
     }
 
     .three_types {
         width: 989px;
-        height: 502px; 
+        height: 502px;
     }
 
     .three_types img {
@@ -1226,11 +1241,11 @@
     }
 
     .form_departure {
-        padding-left: 34px;
+        padding-left: 15px;
     }
 
     .repair_styles-text {
-        padding-left: 90px;
+        margin-left: 66px;
     }
 
     .repair_styles-text .subtitle_h2 {
@@ -1267,7 +1282,7 @@
 
     .repair_styles-images {
         grid-template-columns: 283px 283px;
-        margin-right: 70px;
+        margin-right: 20px;
     }
 
     .about_clients {
@@ -1286,9 +1301,9 @@
     .client-data {
         margin-top: 15px;
     }
-    
+
     .footer-content {
-        max-width: 975px; 
+        max-width: 975px;
     }
 
     .footer nav ul li a {
@@ -1298,19 +1313,347 @@
 
 
 
-@media (min-width: 768px) and (max-width: 1023px) /* сюда добавить свои свойства, в редакторе ставлю минимальный 768 и правлю все блоки*/
-{
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-content {
+        max-width: 720px;
+    }
+
+    .logo {
+        font-size: 8px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .header nav ul li {
+        font-size: 8px;
+    }
+
+    .header nav ul li a {
+        margin-right: 20px;
+    }
+
+    .contacts {
+        font-size: 8px;
+    }
+
+    .header-button {
+        width: 60px;
+        height: 40px;
+        font-size: 8px;
+        margin-left: 20px;
+    }
+
+
+
+    .hero-content {
+        padding-top: 170px;
+        padding-left: 66px;
+    }
+
+    .hero-content .title {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .hero-content .hero-text {
+        font-size: 18px;
+    }
+
+    .about_pj1 {
+        padding-left: 66px;
+    }
+
+    .text_pj1 {
+        width: 280px;
+        margin-left: 0;
+    }
+
+    .subsubtitle_info {
+        grid-template-columns: 120px 130px;
+    }
+
+    .subsubtitle_info .subsubtitle {
+        font-size: 16px;
+    }
+
+    .completed_projects ul {
+        padding-left: 400px;
+    }
+
+    .completed_projects ul li {
+        padding-right: 20px;
+    }
+
+    .completed_projects ul li a {
+        font-size: 10px;
+    }
+
+    .object {
+        width: 301px;
+        height: 199px;
+        /* делаю так, чтобы картинка не выезжала за пределы сайта */
+    }
+
+    .online_control-content {
+        top: -270px;
+    }
+
+    .repair {
+        height: 325px;
+        width: 613px;
+    }
+
+    .repair-overlay {
+        height: 325px;
+        width: 613px;
+    }
+
+    .button_play {
+        top: 230px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .p {
+        font-size: 14px;
+        line-height: 33px;
+    }
+
+    .form_online-control {
+        width: 700px;
+    }
+
+    .three_types {
+        width: 720px;
+        height: 550px;
+    }
+
+    .three_types img {
+        width: 215px;
+    }
+
+    .about_type {
+        width: 200px;
+        top: -45px;
+    }
+
+    .about_type h4 {
+        font-size: 16px;
+    }
+
+    .about_repair {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    .cost {
+        width: 215px;
+        font-size: 17px;
+        margin-top: 20px;
+        margin-left: -7.5px;
+    }
+
+    .measuring {
+        height: 800px;
+    }
+
+    .about_measuring {
+        padding-left: 24px;
+        padding-top: 100px;
+    }
+
+    .all_steps {
+        width: 300px;
+    }
+
+    .form_departure {
+        padding-left: 30px;
+    }
+
+    .form_Call_the_measurer {
+        width: 325px;
+        margin-top: 120px;
+    }
+
+    .form-title_departure {
+        font-size: 15px;
+    }
+
+    .title_lable-departure {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+
+    .subtitle_lable {
+        font-size: 13px;
+    }
+
+    .checkbox-dep {
+        padding-left: 23px;
+    }
+
+    .text_checkbox {
+        font-size: 13px;
+    }
+
+    .button_departure {
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 93px;
+        font-size: 12px;
+    }
+
+    .piggy img {
+        padding-top: 25px;
+    }
+
+    .piggy div {
+        padding-top: 50px;
+        font-size: 14px;
+    }
+
+
+    .repair_styles {
+        height: 820px;
+    }
+
+    .repair_styles-text {
+        margin-left: 50px;
+    }
+
+    .repair_styles-text .subtitle_h2 {
+        font-size: 18px;
+    }
+
+    .repair_styles-text ul li {
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    .repair_styles-images {
+        grid-template-columns: 198px 198px;
+        margin-right: 0px;
+    }
+
+    .img_clock {
+        width: 198px;
+        height: 312px;
+        margin-top: 160px;
+    }
+
+    .img_sofa {
+        width: 198px;
+        height: 154px;
+        margin-top: 100px;
+    }
+
+    .img_tv {
+        width: 198px;
+        height: 196px;
+        margin-top: 0;
+    }
+
+    .img_flower {
+        width: 198px;
+        height: 350px;
+        margin-top: -215px;
+    }
+
+
+
+    .about_clients {
+        width: 720px;
+        height: 400px;
+    }
+
+    .client {
+        width: 227px;
+    }
+
+    .person img {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .person h4 {
+        font-size: 15px;
+        width: 110px;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    .about_clients p {
+        width: 207px;
+        margin-left: 10px;
+    }
+
+    .client-data {
+        margin-top: 90px;
+        width: 234px;
+        height: 66px;
+    }
+
+    .our_contacts {
+        height: 820px;
+    }
+
+    .any_questions {
+        width: 700px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .subtitle_h3-cont {
+        padding-top: 40px;
+    }
+
+
+    .map {
+        width: 648px;
+        height: 326px;
+    }
+
+
+    .footer-content {
+        max-width: 720px;
+        height: 83px;
+    }
+
+    .logo {
+        font-size: 8px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .footer nav ul li {
+        font-size: 8px;
+    }
+
+    .footer nav ul li a {
+        margin-right: 20px;
+    }
+
+    .contacts {
+        font-size: 8px;
+    }
+
+    .header-button {
+        width: 60px;
+        height: 40px;
+        font-size: 8px;
+        margin-left: 20px;
+    }
 
 }
-@media (min-width: 600px) and (max-width: 767px) {
 
-}
 
-@media (min-width: 480px) and (max-width: 599px) {
 
-}
-
-@media (min-width: 375px) and (max-width: 479px) {
+@media (min-width: 375px) and (max-width: 767px) {
 
     .container {
         max-width: 375px;
@@ -1404,7 +1747,7 @@
         width: 311px;
     }
 
-    .completed_pj_mob { 
+    .completed_pj_mob {
         display: block;
         margin-top: 36px;
         width: 340px;
@@ -1417,15 +1760,15 @@
         position: relative;
         top: -138px;
     }
-    
+
     .button_arrow_cp {
-    background: #E3B873;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    border-radius: 50%;
-    border-style: none;
-    padding: 0;
+        background: #E3B873;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        border-radius: 50%;
+        border-style: none;
+        padding: 0;
     }
 
     .button_arrow1_cp {
@@ -1469,6 +1812,7 @@
         background-color: #131313;
         height: 880px;
     }
+
     .online_control-content {
         position: relative;
         top: 0px;
@@ -1484,7 +1828,6 @@
         height: 207px;
         width: 340px;
         margin-top: 40px;
-       /* padding: 0;*/
     }
 
     .repair-overlay {
@@ -1590,7 +1933,7 @@
         margin-top: 40px;
         display: grid;
         grid-template-rows: 490px 490px 490px;
-        row-gap: 59px; 
+        row-gap: 59px;
         width: 340px;
     }
 
@@ -1642,8 +1985,6 @@
     .repair_styles {
         background-image: none;
         height: 365px;
-       /* position: relative;
-        top: -211px;*/
     }
 
     .repair_styles-overlay {
@@ -1684,7 +2025,7 @@
         margin-top: 32px;
     }
 
-    
+
 
 
 
@@ -1700,15 +2041,10 @@
         background-image: none;
         background-color: #131313;
         height: 1204px;
-        /*position: relative;
-        top: -110px;
-        margin-top: 0;*/
-        top: -110px;
+        margin-top: -110px;
     }
 
     .our_contacts-content {
-       /* position: relative;
-        z-index: 1;*/
         top: 0px;
     }
 
